@@ -23,6 +23,6 @@ EOF
 
 sudo chmod 600 /etc/systemd/system/newt.service
 sudo systemctl daemon-reload
-systemctl enable newt.service
-systemctl start newt.service
-systemctl status newt.service
+sudo systemctl enable newt.service
+sudo systemctl start newt.service
+sudo systemctl status newt.service
