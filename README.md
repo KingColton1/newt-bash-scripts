@@ -5,6 +5,8 @@ If you use [Pangolin/Fossorial](https://github.com/fosrl/pangolin) and don't wan
 
 What this script does is very similar to newt's binary install guidance. Install newt, move newt files to `/usr/local/bin` (to make it permanent install), create, enable, and start a new newt.service file to have newt run in background. All you need is enter your site's ID, secret, and endpoint domain after you run `./install-newt.sh`. The information you put in the shell will be used to connect to your pangolin server from your server you installed newt in. They will be stored in a newly created newt.service file, located at `/etc/systemd/system/newt.service`.
 
+Keep that in mind, this script require a Linux system with `wget`, `tee`, `chmod`, and `systemctl`.
+
 # Usage
 This is a simple bash script and should take few seconds to set it up. This guidance assume you have a site's ID, secret, and endpoint domain ready to fill it out. **You must run this shell script as root**
 1. Run `su -` to log in as root.
