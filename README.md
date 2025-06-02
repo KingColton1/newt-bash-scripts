@@ -1,7 +1,7 @@
 # newt-systemd-bash-script
 Small QoL script for Newt's binary install and configure. Based on this [guidance](https://docs.fossorial.io/Newt/install).
 
-If you use [Pangolin/Fossorial](https://github.com/fosrl/pangolin) and don't want to use Docker in every servers, but feel too much hassle with doing it manually every time, this is for you.
+If you use [Pangolin/Fossorial](https://github.com/fosrl/pangolin) and don't want to use Docker in every servers, but feel too much hassle with installing and configuring binary package manually every time, this is for you.
 
 # Usage
 This is a simple bash script and should take few seconds to set it up. This guidance assume you have a site's ID, secret, and endpoint domain ready to fill it out. **You must run this shell script as root**
