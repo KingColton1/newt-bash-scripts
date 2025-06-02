@@ -7,7 +7,7 @@ echo
 read -p "Enter Newt Endpoint (your pangolin's domain): " NEWT_ENDPOINT
 echo
 
-sudo tee /etc/systemd/system/newt.service > /dev/null <<EOF
+tee /etc/systemd/system/newt.service > /dev/null <<EOF
 [Unit]
 Description=Newt VPN Client
 After=network.target
@@ -21,8 +21,8 @@ User=root
 WantedBy=multi-user.target
 EOF
 
-sudo chmod 600 /etc/systemd/system/newt.service
-sudo systemctl daemon-reload
-sudo systemctl enable newt.service
-sudo systemctl start newt.service
-sudo systemctl status newt.service
+chmod 600 /etc/systemd/system/newt.service
+systemctl daemon-reload
+systemctl enable newt.service
+systemctl start newt.service
+systemctl status newt.service
