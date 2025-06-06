@@ -1,5 +1,5 @@
 #!/bin/bash
-wget -O newt "https://github.com/fosrl/newt/releases/download/1.1.3/newt_linux_amd64" && chmod +x ./newt && sudo mv ./newt /usr/local/bin
+wget -O newt "https://github.com/fosrl/newt/releases/download/1.2.1/newt_linux_amd64" && chmod +x ./newt && sudo mv ./newt /usr/local/bin
 
 read -p "Enter Newt ID: " NEWT_ID
 read -sp "Enter Newt Secret: " NEWT_SECRET
