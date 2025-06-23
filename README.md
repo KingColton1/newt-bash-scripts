@@ -10,7 +10,7 @@ Keep that in mind, this script require a Linux system with `wget`, `tee`, `chmod
 # Usage
 This is a simple bash script and should take few seconds to set it up. This guidance assume you have a site's ID, secret, and endpoint domain ready to fill it out. **You must run this shell script as root**
 1. Run `su -` to log in as root.
-2. Grab install-newt.sh using wget: `wget https://raw.githubusercontent.com/KingColton1/newt-systemd-bash-script/refs/heads/main/install-newt.sh`
+2. Grab install-newt.sh using wget: `wget https://raw.githubusercontent.com/KingColton1/newt-bash-scripts/refs/heads/main/install-newt.sh`
 3. Run `chmod +x install-newt.sh` to make it executable.
 4. Run `./install-newt.sh` to start install and configure.
 5. Enter your site's ID, secret, and endpoint domain.
