@@ -1,5 +1,5 @@
-# newt-systemd-bash-script
-Small QoL script for Newt's binary install and configure. Based on this [guidance](https://docs.fossorial.io/Newt/install).
+# newt-bash-scripts
+Small QoL script for Newt's binary install, configure, and upgrade. Based on this [guidance](https://docs.fossorial.io/Newt/install).
 
 If you use [Pangolin/Fossorial](https://github.com/fosrl/pangolin) and don't want to use Docker in every servers, but feel too much hassle with installing and configuring binary package manually every time. Or that you don't know how to keep newt running in background (such as systemd), this is for you.
 
