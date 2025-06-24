@@ -7,6 +7,8 @@ What this script does is very similar to newt's binary install guidance. Install
 
 Keep that in mind, this script require a Linux system with `wget`, `tee`, `chmod`, and `systemctl`. Make sure your Linux/FreeBSD/Darwin system does have these packages or able to install them. Windows is not supported currently.
 
+Once you download `install-newt.sh` and/or `upgrade-newt.sh`, you don't need to re-download it every time a new Newt version is available because both scripts will grab latest version for you!
+
 # Usage
 This is a simple bash script and should take few seconds to set it up. This guidance assume you have a site's ID, secret, and endpoint domain ready to fill it out. **You must run this shell script as root**
 1. Run `su -` to log in as root.
