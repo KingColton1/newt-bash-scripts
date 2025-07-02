@@ -12,13 +12,15 @@ Once you download `install-newt.sh` and/or `upgrade-newt.sh`, you don't need to 
 # Usage
 This is a bash script and should take few seconds to set it up. This guidance assume you have a site's ID, secret, and endpoint domain ready to fill it out. **You must run this shell script as root**
 1. Run `su -` to log in as root.
-2. Grab install-newt.sh using wget: `wget https://raw.githubusercontent.com/KingColton1/newt-bash-scripts/refs/heads/main/install-newt.sh`
-3. Run `chmod +x install-newt.sh` to make it executable.
-4. Run `./install-newt.sh` to start install and configure.
-5. Enter your site's ID, secret, and endpoint domain.
-6. Let the script take care rest of it
-7. Newt service should be active and running (the output of `sudo systemd status newt.service` will appear after install shell is finished).
-8. Check your pangolin dashboard, your site should be shown as "Online". If it is, it's a successful installation!
+   - If you are on Ubuntu or a server that have `sudo` package installed, run `sudo su -` instead.
+2. Run one-line install script (install-newt.sh):
+```bash
+   bash <(wget -qO- https://raw.githubusercontent.com/KingColton1/newt-bash-scripts/main/install-newt.sh)
+```
+3. Enter your site's ID, secret, and endpoint domain.
+4. Let the script take care rest of it.
+5. Newt service should be active and running (the output of `sudo systemd status newt.service` will appear after install shell is finished).
+6. Check your pangolin dashboard, your site should be shown as "Online". If it is, it's a successful installation!
 
 # Upgrade to a new Newt version
 Another bash script for upgrading Newt to a new version. **You must run this shell script as root**
@@ -28,3 +30,5 @@ Another bash script for upgrading Newt to a new version. **You must run this she
 4. Run `./upgrade-newt.sh` to start install and configure.
 7. Newt service should be active and running (the output of `sudo systemd status newt.service` will appear after upgrade shell is finished).
 6. Ensure that you can access to your sites without a problem. If there is no problem, you're good to go!
+
+You can reuse `upgrade-newt.sh` to upgrade your newt client to a new version whenever a new version is published.
