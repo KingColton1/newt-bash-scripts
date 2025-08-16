@@ -25,9 +25,12 @@ This is a bash script and should take few seconds to set it up. This guidance as
 # Upgrade to a new Newt version
 Another bash script for upgrading Newt to a new version. **You must run this shell script as root**
 1. Run `su -` to log in as root.
-2. Grab upgrade-newt.sh using wget: `wget https://raw.githubusercontent.com/KingColton1/newt-bash-scripts/refs/heads/main/upgrade-newt.sh`
-3. Run `chmod +x upgrade-newt.sh` to make it executable.
-4. Run `./upgrade-newt.sh` to start install and configure.
+2. Grab upgrade-newt.sh using wget:
+```bash
+   wget -qO- https://raw.githubusercontent.com/KingColton1/newt-bash-scripts/refs/heads/main/upgrade-newt.sh
+```
+4. Run `chmod +x upgrade-newt.sh` to make it executable.
+5. Run `./upgrade-newt.sh` to start install and configure.
 7. Newt service should be active and running (the output of `sudo systemd status newt.service` will appear after upgrade shell is finished).
 6. Ensure that you can access to your sites without a problem. If there is no problem, you're good to go!
 
