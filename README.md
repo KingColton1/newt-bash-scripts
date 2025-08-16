@@ -27,7 +27,7 @@ Another bash script for upgrading Newt to a new version. **You must run this she
 1. Run `su -` to log in as root.
 2. Grab upgrade-newt.sh using wget:
 ```bash
-   wget -qO- https://raw.githubusercontent.com/KingColton1/newt-bash-scripts/refs/heads/main/upgrade-newt.sh
+   wget https://raw.githubusercontent.com/KingColton1/newt-bash-scripts/refs/heads/main/upgrade-newt.sh
 ```
 4. Run `chmod +x upgrade-newt.sh` to make it executable.
 5. Run `./upgrade-newt.sh` to start install and configure.
