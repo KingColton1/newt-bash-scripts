@@ -15,7 +15,7 @@ This is a bash script and should take few seconds to set it up. This guidance as
    - If you are on Ubuntu or a server that have `sudo` package installed, run `sudo su -` instead.
 2. Run one-line install script (install-newt.sh):
 ```bash
-   bash <(wget -qO- https://raw.githubusercontent.com/KingColton1/newt-bash-scripts/main/install-newt.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/KingColton1/newt-bash-scripts/main/install-newt.sh)
 ```
 3. Enter your site's ID, secret, and endpoint domain.
 4. Let the script take care rest of it.
@@ -27,7 +27,7 @@ Another bash script for upgrading Newt to a new version. **You must run this she
 1. Run `su -` to log in as root.
 2. Grab upgrade-newt.sh using wget:
 ```bash
-   wget https://raw.githubusercontent.com/KingColton1/newt-bash-scripts/refs/heads/main/upgrade-newt.sh
+wget https://raw.githubusercontent.com/KingColton1/newt-bash-scripts/refs/heads/main/upgrade-newt.sh
 ```
 4. Run `chmod +x upgrade-newt.sh` to make it executable.
 5. Run `./upgrade-newt.sh` to start install and configure.
